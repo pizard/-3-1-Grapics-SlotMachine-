@@ -1,4 +1,4 @@
-#include "Model_OBJ_Texture.h"
+#include "header/Model_OBJ_Texture.h"
 #include <windows.h>
 #include <fstream>
 #include <stdio.h>
@@ -13,7 +13,7 @@
 #include <vector>
 #include <cmath>
 #define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+#include "header/stb_image.h"
 #define VERTEX_PER_TRIANGLE 3
 #define VERTEX_PER_QUAD 4
 #define VERTEX_PER_FACE 16

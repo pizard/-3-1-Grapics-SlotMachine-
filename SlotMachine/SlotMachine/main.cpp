@@ -6,7 +6,7 @@
 #include<Windows.h>
 #include "header/glm/glm/glm.hpp"
 #include<math.h>
-#include "Model_OBJ_Texture.h"
+#include "header/Model_OBJ_Texture.h"
 #include <ctime>
 #include <cstdlib>
 static double c = 0;
@@ -145,11 +145,11 @@ void createCube(void)
 }
 
 void init(void) {
-	char filename1[] = "wall.jpg";
-	char filename2[] = "wall.jpg";
-	char filename3[] = "up.jpg";
-	char filename4[] = "floor.jpg";
-	char filename5[] = "slot1.png";
+	char filename1[] = "BackgroundWall.jpg";
+	char filename2[] = "BackgroundWall.jpg";
+	char filename3[] = "BackgroundUp.jpg";
+	char filename4[] = "BackgroundFloor.jpg";
+	char filename5[] = "BackgroundSlot.png";
 	glGenTextures(4, textures);
 	LoadMeshFromFile(filename1, textures[0]);
 	LoadMeshFromFile(filename2, textures[1]);
@@ -799,13 +799,13 @@ int main(int argc, char ** argv)
 	glutReshapeFunc(reshape);
 	glutKeyboardFunc(keyboard);
 	glutSpecialFunc(specialKeyboard);
-	obj_momche.Load("slot_machine_momche_challenge.obj");
-	obj_sonjabi.Load("slotmachine_sonjabi.obj");
-	obj_slot[0].Load("Slot_Machine_slot.obj");
-	obj_slot[1].Load("Slot_Machine_slot.obj");
-	obj_slot[2].Load("Slot_Machine_slot.obj");
-	obj_view_slot.Load("slotmachine_reafinal.obj");
-	obj_chair.Load("chair.obj");
+	obj_momche.Load("SlotMachineMomche.obj");
+	obj_sonjabi.Load("SlotMachineSonjabi.obj");
+	obj_slot[0].Load("SlotMachineSlot.obj");
+	obj_slot[1].Load("SlotMachineSlot.obj");
+	obj_slot[2].Load("SlotMachineSlot.obj");
+	obj_view_slot.Load("SlotMachineReal.obj");
+	obj_chair.Load("SlotMachineChair.obj");
 	glutMainLoop();
-	return 0;
+	return 0;;;
 }
