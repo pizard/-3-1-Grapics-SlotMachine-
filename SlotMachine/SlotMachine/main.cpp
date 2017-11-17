@@ -384,12 +384,14 @@ void keyboard(unsigned char key, int x, int y) {
 		//xCam -= 0.1;
 		break;
 	case 'a':
+	case 'A':
 		rot_x = temp_x*cos(5 * PI / 180.0f) - temp_y*sin(5 * PI / 180.0f);
 		rot_y = temp_y*cos(5 * PI / 180.0f) + temp_x*sin(5 * PI / 180.0f);
 		xDirect = xCam + rot_x;
 		yDirect = yCam + rot_y;
 		break;
 	case 's':
+	case 'S':
 		rot_x = temp_x*cos(5 * PI / 180.0f) + temp_y*sin(5 * PI / 180.0f);
 		rot_y = temp_y*cos(5 * PI / 180.0f) - temp_x*sin(5 * PI / 180.0f);
 		xDirect = xCam + rot_x;
